@@ -1,7 +1,7 @@
 services:
   - type: web
     name: fraud-detection-service
-    runtime: java
+    env: java
     rootDir: fraud-detection-service
     plan: free
     buildCommand: ./mvnw clean package -DskipTests
@@ -23,4 +23,4 @@ services:
       - key: GEMINI_API_KEY
         sync: false
       - key: GEMINI_MODEL
-        value: gemini-1.5-flash
+        sync: false
