@@ -1,0 +1,15 @@
+.env
+.DS_Store
+
+# Node / frontend
+node_modules/
+dist/
+build/
+.next/
+
+# Java / Maven
+target/
+.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
